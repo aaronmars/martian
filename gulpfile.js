@@ -21,11 +21,15 @@
 
 var gulp = require('gulp');
 var cached = require('gulp-cached');
+var babel = require('gulp-babel');
+var sourcemaps = require('gulp-sourcemaps');
 var KarmaServer = require('karma').Server;
-var inspectSources = [
+var jsSources = [
     './*.js',
-    '*(errors|lib|models|test)/**/*.js'
+    '*(errors|lib|models)/**/*.js'
 ];
+var inspectSources = jsSources.concat('test/**/*.js');
+var buildSources = jsSources.concat('!karma.conf.js', '!gulpfile.js', '!config.js');
 
 /*** js tests ***/
 gulp.task('test', function() {
@@ -42,6 +46,16 @@ gulp.task('inspect:lint', function() {
         .pipe(cached('inspect:lint'))
         .pipe(lint({ configFile: '.eslintrc' }))
         .pipe(lint.format('stylish'));
+});
+gulp.task('build', function() {
+    return gulp.src(buildSources)
+        .pipe(sourcemaps.init())
+        .pipe(babel({
+            presets: [ 'es2015' ],
+            sourceMaps: 'inline'
+        }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('dist'));
 });
 
 /*** main tasks ***/

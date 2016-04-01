@@ -3,7 +3,7 @@
   "version": "0.3.0-beta.4",
   "description": "Core JavaScript API for MindTouch",
   "license": "Apache-2.0",
-  "main": false,
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/MindTouch/martian"
@@ -15,6 +15,7 @@
     "gulp-cached": "1.1.0",
     "gulp-eslint": "2.0.0",
     "gulp-plumber": "1.1.0",
+    "gulp-sourcemaps": "1.6.0",
     "isparta": "4.0.0",
     "jasmine": "2.4.1",
     "jasmine-core": "2.4.1",
