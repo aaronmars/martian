@@ -16,7 +16,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {utility} from './lib/utility';
+import {utility} from './utility/utility';
 import {fileModel} from './models/file.model';
 
 /**

@@ -16,7 +16,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {Plug} from './lib/plug';
+import {Plug} from './utility/plug';
 import {learningPathModel} from './models/learningPath.model';
 import {pageModel} from './models/page.model';
 let maxSummaryCount = 500;

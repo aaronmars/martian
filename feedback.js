@@ -16,9 +16,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {Plug} from './lib/plug';
-import {utility} from './lib/utility';
-import {stringUtility} from './lib/stringUtility';
+import {Plug} from './utility/plug';
+import {utility} from './utility/utility';
+import {stringUtility} from './utility/stringUtility';
 import {pageRatingsModel} from './models/pageRatings.model';
 
 /**

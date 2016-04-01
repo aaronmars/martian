@@ -16,7 +16,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {Plug} from 'lib/plug';
+import {Plug} from 'utility/plug';
 import {pagePropertiesModel} from 'models/pageProperties.model';
 import {pagePropertyModel} from 'models/pageProperty.model';
 import {PageProperty} from 'pageProperty';

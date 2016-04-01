@@ -28,7 +28,7 @@ module.exports = function(config) {
             ],
             serveFiles: [
                 '*.js',
-                'lib/*.js',
+                'utility/*.js',
                 'models/*.js',
                 'errors/*.js'
             ]
