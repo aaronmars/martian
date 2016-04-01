@@ -16,8 +16,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {Plug} from './lib/plug';
-import {utility} from './lib/utility';
+import {Plug} from './utility/plug';
+import {utility} from './utility/utility';
 import {userModel} from './models/user.model';
 import {userListModel} from './models/userList.model';
 

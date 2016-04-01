@@ -16,7 +16,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {Plug} from 'lib/plug';
+import {Plug} from 'utility/plug';
 import {fileModel} from 'models/file.model';
 import {fileRevisionsModel} from 'models/fileRevisions.model';
 import {File} from 'file';

@@ -16,9 +16,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {Plug} from 'lib/plug';
+import {Plug} from 'utility/plug';
+import {Settings} from 'utility/settings';
 import {searchModel} from 'models/search.model';
-import {Settings} from 'lib/settings';
 import {Site} from 'site';
 describe('Site API', () => {
     let settings = new Settings({
