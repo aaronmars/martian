@@ -55,7 +55,7 @@ gulp.task('build', function() {
             sourceMaps: 'inline'
         }))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('lib'));
 });
 
 /*** main tasks ***/
