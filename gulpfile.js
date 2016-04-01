@@ -26,7 +26,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var KarmaServer = require('karma').Server;
 var jsSources = [
     './*.js',
-    '*(errors|lib|models)/**/*.js'
+    '*(errors|utility|models)/**/*.js'
 ];
 var inspectSources = jsSources.concat('test/**/*.js');
 var buildSources = jsSources.concat('!karma.conf.js', '!gulpfile.js', '!config.js');
